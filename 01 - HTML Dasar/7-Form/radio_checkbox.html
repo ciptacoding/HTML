@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner</title>
+</head>
+<body>
+    <!-- membuat form -->
+    <form>
+        <h1>Kuesioner 1</h1>
+        <p>Tolong Beri Tanda Checklist Di Bawah ini</p><!--fungsi atribut for agar jika tulisan dalam label di klik langsung mengarah ke radio-->
+    <fieldset>    
+        <label>Jenis Kelamin</label>
+        <br>
+        <label for="pria"><input type="radio" id="pria" name="jk" value="0">pria</label><!--fungsi name agar inputan hanya bisa memilih 1 radio-->
+        <label for="wanita"><input type="radio" id="wanita" name="jk" value="1">wanita</label>
+        <br>
+
+        <label>Hobi</label><br>
+        <label for="ngoding"><input type="checkbox" id="ngoding"> ngoding</label><!--fungsi id untuk memanggil for-->
+        <label for="futsal"><input type="checkbox" id="futsal">futsal</label>
+        <label for="renang"><input type="checkbox" id="renang">renang</label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <label>Bahasa Pemrograman</label>
+        <select>
+            <optgroup label="FrontEnd">
+                <option value="Html">Html</option>
+                <option value="Css">Css</option>
+                <option value="Javascript">Javascript</option>
+                <option value="PHP">PHP</option>
+            </optgroup>
+            <optgroup label="BackEnd">
+                <option value="Golang">Golang</option>
+                <option value="C++">C++</option>
+                <option value="Python">Python</option>
+            </optgroup>t
+        </select>
+        <input type="submit" value="Kirim">
+    </fieldset>
+    </form>
+</body>
+</html>
